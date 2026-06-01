@@ -1,6 +1,6 @@
 'use strict';
 const { Transform, Readable } = require('stream');
-const TAG = 'mock-server-7638a5';
+const TAG = 'mock-server-5937bf';
 class Upper extends Transform {
   _transform(chunk, enc, cb) { cb(null, chunk.toString().toUpperCase()); }
 }
